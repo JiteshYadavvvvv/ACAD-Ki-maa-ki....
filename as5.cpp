@@ -63,14 +63,7 @@ void ms(vi &v,int l, int r){
 }
 signed main(){
     int n;
-    cout<<"Enter size of array\n";
+    cout<<"Enter size of Linked List\n";
     cin>>n;
-    vi v(n);
-    for(int i=0;i<n;i++)cin>>v[i];
-    cout<<"Enter accordingly\n 1.Quick Sort\n 2.Merge Sort\n";
-    int x;
-    cin>>x;
-    if(x==1)qs(v,0,n-1);
-    else ms(v,0,n-1);
-    for(int i=0;i<n;i++)cout<<v[i]<<" ";
-}            
+    
+}      
