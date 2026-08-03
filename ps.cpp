@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
-void bs(vector<int> &a, int n, int k){
+void bs(int a[], int n, int k){
+    sort(a, a+n);
     int c=0;
     int l=0,r=n-1;
     while(l<=r){
@@ -20,7 +21,7 @@ void bs(vector<int> &a, int n, int k){
     }
     cout<<-1;
 }
-void ls(vector<int> &a, int n, int k){
+void ls(int a[], int n, int k){
     int c=0;
     for(int i=0;i<n;i++){
         c++;
@@ -36,9 +37,13 @@ int main(){
     int n;
     cout<<"Enter number of elements\n";
     cin>>n;
-    vector<int> a(n);
-    cout<<"Enter elements\n";
-    for(int i=0;i<n;i++)cin>>a[i];
+    int a[n];
+    //cout<<"Enter elements\n";
+    for(int i=0;i<n;i++){
+        int t=rand();
+        a[i]=t;
+    }
+    cout<<a[12];
     int x;
     cout<<"Enter\n 1.Binary Search \n 2.Linear Search\n";
     cin>>x;
