@@ -43,7 +43,7 @@ int main(){
         int t=rand();
         a[i]=t;
     }
-    cout<<a[12];
+    //cout<<a[12];
     int x;
     cout<<"Enter\n 1.Binary Search \n 2.Linear Search\n";
     cin>>x;
